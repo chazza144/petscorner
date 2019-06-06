@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Indie+Flower&display=swap" rel="stylesheet');
+
+/* font-family: 'Indie Flower', cursive;
+font-family: 'Fredoka One', cursive; */
+
+/* ------Bootstrap amendments------*/
+
+
+
+/* -----------Header------------- */
+
+.title-fix {
+    font-family: 'Fredoka One', cursive;
+    padding: 0;
+}
+
+
+
+/* -----------subtitlehome------------- */
+
+.sectionhome {
+    padding-top: 20px;
+    margin-top: 30px;
+    font-family: 'Indie Flower', cursive;
+
+}
+
+/* -----------body design------------- */
+body {
+    background-color: #87cefa
+}
+
+
+.bodydesign {
+    background-color: #fffafa;
+    padding: 20;
+    width: 70px;
+    
+}
+
+
+/* ----------------------------------------Footer */
+
+
+
+
+
+/* ----------------------------------------Media */
+
+@media (max-width: 1024px) {
+    .bodydesign {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1025px) {
+    /*desktop*/
+    .bodydesign {
+        width: 70%;
+    }
+}
