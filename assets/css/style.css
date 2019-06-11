@@ -5,8 +5,6 @@ font-family: 'Fredoka One', cursive; */
 
 /* ------Bootstrap amendments------*/
 
-
-
 /* -----------Header------------- */
 
 .title-fix {
@@ -23,11 +21,12 @@ font-family: 'Fredoka One', cursive; */
     margin-top: 30px;
 }
 
-.visitfont{
+.subtitlefont {
     font-family: 'Indie Flower', cursive;
 }
 
 /* -----------body design------------- */
+
 body {
     background-color: #87cefa
 }
@@ -36,26 +35,44 @@ body {
 .bodydesign {
     background-color: #fffafa;
     padding: 20px;
-    }
+}
 
 
 /* ----------------------------------------Footer */
 
+footer {
+    padding-top: 20px;
+    margin-top: 30px;
+    background-color: #fffafa;
+    padding: 20px;
+    font-family: ;
+}
 
+.social-links {
+    padding-bottom: 15px;
+}
+
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 15px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #e84610;
+}
 
 
 
 /* ----------------------------------------Media */
-
-@media (max-width: 1024px) {
-    .bodydesign {
-        width: 100%;
-    }
-}
-
-@media (min-width: 1025px) {
-    /*desktop*/
-    .bodydesign {
-        width: 70%;
-    }
-}
