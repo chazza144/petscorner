@@ -5,11 +5,13 @@ font-family: 'Fredoka One', cursive; */
 
 /* ------Bootstrap amendments------*/
 
+
+
 /* -----------Header------------- */
 
 .title-fix {
     font-family: 'Fredoka One', cursive;
-    padding: 0;
+    margin-top: 0px;
 }
 
 
@@ -18,7 +20,7 @@ font-family: 'Fredoka One', cursive; */
 
 .sectionhome {
     padding-top: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .subtitlefont {
@@ -34,7 +36,7 @@ body {
 
 .bodydesign {
     background-color: #fffafa;
-    padding: 20px;
+    padding: ;
 }
 
 
@@ -51,12 +53,15 @@ footer {
 .social-links {
     padding-bottom: 15px;
 }
-
+#copyright {
+    width: 32px;
+    height: 32px;
+}
 
 .social-links li a i {
     width: 32px;
     height: 32px;
-    padding: 12px 0;
+    padding: 12px;
     border-radius: 50%;
     font-size: 15px;
     line-height: 7px;
