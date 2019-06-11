@@ -18,30 +18,35 @@
 <!--Body-->
 
 <body>
-    <header>
-        <!-- Nav Bar -->
-        <nav class="container navbar navbar-expand-lg navbar-light bg-light">
 
-            <button class="ml-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Nav Bar - FIX PADDING -->
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+
+        <button class="navbarbuttonproperties ml-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="text-right navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Disabled</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div class="collapse navbar-collapse navbarlistproperties" id="navbarNav">
+            <ul class="text-right navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <header>
+
 
         <!-- Title -->
         <div class="container title-fix bodydesign">
@@ -60,41 +65,34 @@
 
 
     <!--Main-->
-    <main>
-        <section>
-            <div class="container bodydesign sectionhome">
-                <row>
-                    <h3 class="text-center subtitlefont">COME VISIT!</h3>
-                </row>
+    <main class=container>
+        <section class=row>
+            <div class="bodydesign sectioncontent">
+                <h3 class="text-center subtitlefont">Latest News!</h3>
                 <div class="row justify-content-center text-center">
-                    <div class="col-12">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
+                    <p class="col-12">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
                 </div>
             </div>
         </section>
-        <section>
-            <div class="container bodydesign sectionhome">
-                <row>
-                    <h3 class="text-center subtitlefont">COME VISIT!</h3>
-                </row>
-                <div class="row justify-content-center text-center">
-                    <div class="col-12">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div class="col-12">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
+        <section class=row>
+            <div class="bodydesign sectioncontent">
+                <h3 class="text-center subtitlefont">COME VISIT!</h3>
+                <div class="justify-content-center text-center">
+                    <p class="col-6">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
                 </div>
+                <div class="col-12">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
             </div>
         </section>
 
@@ -104,19 +102,15 @@
     <!--Footer-->
     <footer class="container-fluid">
         <div class="row">
-            <div id="copyright" <i class="col-sm-2 far fa-copyright">
-                </i>
-            </div>
-            <div class="col-sm-4">
+            <p>copyright logo here</p>
+            <div class="col-sm-3">
                 <button type="button" class="btn btn-primary btn-lg">Donate</button>
 
             </div>
 
-            <!--column padding to be fixed-->
-            <div class="col-sm-2">
-            </div>
-            <div class="col-sm-4">
-                <h5>Social</h5>
+
+
+            <div class="col-sm-3 offset-sm-3" <h5>Social</h5>
                 <ul class="list-inline social-links">
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
