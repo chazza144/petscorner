@@ -3,11 +3,24 @@
 /* font-family: 'Indie Flower', cursive;
 font-family: 'Fredoka One', cursive; */
 
+/* -----------body design------------- */
+
+body {
+    background-color: #87cefa;
+}
+
+
+.bodydesign {
+    background-color: #fffafa;
+}
+
+
 /* ------Navbar------*/
 
-#navbarfix {
+.navbar {
     padding: 0px;
 }
+
 
 .navbarbuttonproperties {
     background-color: #fffafa;
@@ -17,6 +30,7 @@ font-family: 'Fredoka One', cursive; */
     background-color: #fffafa;
     /* ------change border colour!------*/
     border: 2px solid #4a4a4f;
+    border-radius: 10px;
     padding-right: 10px;
 }
 
@@ -26,8 +40,13 @@ font-family: 'Fredoka One', cursive; */
 .title-fix {
     font-family: 'Fredoka One', cursive;
     padding-top: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
+.fb-like{
+    float: right 
+}
 
 /* -----------MenuButtons------------- */
 
@@ -39,6 +58,8 @@ font-family: 'Fredoka One', cursive; */
     border-radius: 10px;
     opacity: 0.5;
     transition: opacity 0.5s ease-in-out;
+    text-decoration: none;
+
 }
 
 .buttonp {
@@ -52,6 +73,7 @@ font-family: 'Fredoka One', cursive; */
 .buttontext {
     text-align: center;
     margin-top: 20px;
+    text-decoration: none;
 }
 
 
@@ -64,37 +86,36 @@ font-family: 'Fredoka One', cursive; */
 /* -----------Content sections------------- */
 
 .sectioncontent {
-    padding-top: 20px;
+    padding: 20px 20px 20px 20px;
     margin-top: 20px;
+    border-radius: 10px;
 }
 
 .subtitlefont {
     font-family: 'Indie Flower', cursive;
 }
 
-/* -----------body design------------- */
+/* -----------Images------------- */
 
-body {
-    background-color: #87cefa
+.imgreindeer {
+    height: 250px;
+    width: 250px;
+    float: left;
+    border: 2px solid #4a4a4f;
 }
-
-
-.bodydesign{
-    background-color: #fffafa;
-}
-
 
 /* ----------------------------------------Footer */
 
 footer {
-    padding-top: 20px;
-    margin-top: 30px;
+    padding-top: 10px;
+    margin-top: 10px;
     background-color: #fffafa;
     font-family: ;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .social-links {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 #copyright {
@@ -131,6 +152,7 @@ footer {
         display: none;
     }
 }
+
 @media (min-width: 992px) {
     .navbar-expand-lg {
         display: none;
