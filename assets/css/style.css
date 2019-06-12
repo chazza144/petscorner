@@ -25,13 +25,43 @@ font-family: 'Fredoka One', cursive; */
 
 .title-fix {
     font-family: 'Fredoka One', cursive;
-    margin-top: 0px;
+    padding-top: 10px;
 }
 
 
+/* -----------MenuButtons------------- */
+
+.menubutton {
+    margin: 10px 10px 30px 10px;
+    height: 80px;
+    width: 80px;
+    border: 3px solid black;
+    border-radius: 10px;
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.buttonp {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 0px;
+
+}
+
+.buttontext {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.menubutton:hover {
+    opacity: 1.0;
+    color: white;
+}
+
 
 /* -----------Content sections------------- */
-
 
 .sectioncontent {
     padding-top: 20px;
@@ -49,9 +79,8 @@ body {
 }
 
 
-.bodydesign {
+.bodydesign{
     background-color: #fffafa;
-    padding: ;
 }
 
 
@@ -97,3 +126,13 @@ footer {
 
 /* ----------------------------------------Media */
 
+@media (max-width: 992px) {
+    .menubutton {
+        display: none;
+    }
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg {
+        display: none;
+    }
+}
