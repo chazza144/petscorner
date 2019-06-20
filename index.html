@@ -8,7 +8,8 @@
 
     <!-- Bootstrap Font-awesome CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" media="screen" />
+
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Pets Corner</title>
@@ -32,10 +33,10 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="#">Animals</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
@@ -47,41 +48,39 @@
 
     <header>
 
-
         <!------- Header ------>
 
-        <div class="container title-fix bodydesign">
+        <div class="container titlecontainerfix bodydesign">
 
             <div class="fb-like" data-href="https://www.facebook.com/PetsCornerHarlow/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
             <br>
 
             <div class="row justify-content-center">
-                <div class="text-uppercase">
+                <div class="text-uppercase titleshadow">
                     <h1>Pets Corner</h1>
-                    <h4 class="lead">Harlow, Essex</h4>
+                    <h5>Harlow, Essex</h5>
                 </div>
 
             </div>
 
             <!-- Menu Buttons -->
             <div class="row justify-content-center">
-                <div class="menubutton" style="background-color: yellow">
-                    <p class="buttonp">o</p>
+                <div class="menubutton">
+                    <i class="fa fa-home" aria-hidden="true"></i>
                     <p class="buttontext">Home</p>
                 </div>
-                <div class="menubutton" style="background-color: blue">
-                    <p class="buttonp">o</p>
-                    <p class="buttontext">News</p>
+                <div class="menubutton">
+                    <i class="fa fa-child" aria-hidden="true"></i>
+                    <p class="buttontext">Events</p>
                 </div>
-                <div class="menubutton" style="background-color: orange">
-                    <p class="buttonp">o</p>
-                    <p class="buttontext">test</p>
+                <div class="menubutton">
+                    <i class="fa fa-paw" aria-hidden="true"></i>
+                    <p class="buttontext">Animals</p>
                 </div>
-                <a href="https://www.bbc.co.uk/news">
-                    <div class="menubutton" style="background-color: red">
-                        <p class="buttonp"><i class="fa fa-comment-o" aria-hidden="true"></i></p>
-                        <p class="buttontext">Contact</p>
-                    </div>
+                <div class="menubutton">
+                    <i class="fa fa-map-pin" aria-hidden="true"></i>
+                    <p class="buttontext">Contact</p>
+                </div>
                 </a>
             </div>
         </div>
@@ -95,10 +94,9 @@
         <section class="row">
             <div class="bodydesign sectioncontent">
 
+                <img src="assets/images/sheep.jpg" class="images" alt="sheep" style="width:100%;">
                 <div class="justify-content-center text-center subtitlefont">COME VISIT!</div>
-                <img src="assets/images/sheep.jpg" alt="sheep" style="width:100%;">
-
-                <p class="col-12">
+                <p class="col-12 contenttext">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                     in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
@@ -107,15 +105,11 @@
         </section>
         <section class=row>
             <div class="bodydesign sectioncontent">
-                <h3 class="text-center subtitlefont">BIG NEWS!</h3>
+                <h3 class="text-center subtitlefont">LATEST NEWS!</h3>
                 <div class="text-center">
-
-                    <p>
-                        <img class="imgreindeer" src="assets/images/reindeer.jpg" alt="reindeer"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                        sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p>
+                    
+                    <p class= "col-sm">
+                        <img class="imgreindeer" src="assets/images/reindeer.jpg" alt="reindeer">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                         in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
@@ -127,6 +121,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                         in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
+                    
                 </div>
             </div>
         </section>
@@ -137,9 +132,10 @@
     <!--Footer-->
     <footer class="container-fluid">
         <div class="row justify-content-md-center">
-            <div class="col">copyright
+            <div class="col">
+                <i class="fa fa-copyright copyrightlogo"></i>
             </div>
-            <div class="col-md-auto donatebutton">
+            <div class="col col-md-4 donatebutton">
                 <button type="button" class="btn btn-primary btn-lg">Click Here To Donate</button>
             </div>
             <div class="col col-md-3">

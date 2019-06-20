@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Indie+Flower&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Nunito&display=swap');
 
-/* font-family: 'Indie Flower', cursive;
-font-family: 'Fredoka One', cursive; */
+/*
+font-family: 'Nunito', sans-serif;
+font-family: 'Fredoka One', cursive;*/
 
 /* -----------body design------------- */
 
@@ -21,6 +22,12 @@ body {
     padding: 0px;
 }
 
+.navbar-expand-lg ul li {
+    width: ;
+    position: relative;
+}
+
+
 
 .navbarbuttonproperties {
     background-color: #fffafa;
@@ -28,30 +35,40 @@ body {
 
 .navbarlistproperties {
     background-color: #fffafa;
-    /* ------change border colour!------*/
     border: 2px solid #fffafa;
     border-radius: 10px;
     padding-right: 10px;
+
+}
+
+
+
+
+
+/* -----------Harlow Council Img - TO FIX (after adding)------------- */
+
+.harlowimg {
+    height: ;
+    width: ;
 }
 
 
 /* -----------Header------------- */
 
-
-/* -----------Harlow Img - TO FIX (after adding)------------- */
-.harlowimg {
-    height: 80px;
-    width: 80px;
-}
-
-
-.title-fix {
+.titlecontainerfix {
     font-family: 'Fredoka One', cursive;
     padding-top: 10px;
     border-radius: 10px;
     margin-top: 10px;
     text-align: center;
 }
+
+.titleshadow {
+    text-shadow: 2px 2px 3px grey;
+}
+
+
+
 
 .fb-like {
     float: right
@@ -60,48 +77,42 @@ body {
 /* -----------MenuButtons------------- */
 
 .menubutton {
-    margin: 10px 10px 30px 10px;
+    margin: 10px 10px 40px 10px;
     height: 80px;
     width: 80px;
-    border: 3px solid black;
+    border: 3px solid #333333;
     border-radius: 10px;
     opacity: 0.5;
     transition: opacity 0.5s ease-in-out;
     text-decoration: none;
+    background-color: #007bff;
 
 }
-
-.buttonp {
-    text-align: center;
-    font-size: 40px;
-    font-weight: bolder;
-    margin: 0px;
-    text-decoration: none;
-
-}
-
-.buttontext {
-    text-align: center;
-    margin-top: 20px;
-    text-decoration: none;
-}
-
 
 .menubutton:hover {
     opacity: 1.0;
     color: white;
 }
 
+.menubutton i {
+    padding-top: 15px;
+    font-size: 45px;
+
+}
+
+.buttontext {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
 
 /* -----------Content sections------------- */
-
-.sheepimg {
-    position: relative;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fffafa;
-}
 
 .sectioncontent {
     padding: 20px 20px 20px 20px;
@@ -110,8 +121,13 @@ body {
 }
 
 .subtitlefont {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
     font-size: 1.75rem;
+}
+
+.contenttext {
+    font-family: 'Nunito', sans-serif;
 }
 
 /* -----------Images------------- */
@@ -120,7 +136,12 @@ body {
     height: 250px;
     width: 250px;
     float: left;
-    border: 2px solid #4a4a4f;
+    border-radius: 10px;
+}
+
+.images {
+    border-radius: 10px;
+    
 }
 
 /* ----------------------------------------Footer */
@@ -128,9 +149,9 @@ body {
 footer {
     padding-top: 10px;
     padding-left: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     background-color: #fffafa;
-    font-family: ;
+    font-family: 'Nunito', sans-serif;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -159,6 +180,11 @@ footer {
     background: #007bff;
 }
 
+.copyrightlogo {
+    font-size: 40px;
+    color: #808080;
+}
+
 
 
 /* ----------------------------------------Media */
@@ -173,9 +199,12 @@ footer {
     .social-links {
         padding-left: 5px;
     }
+    .title-fix {
+        padding-bottom: 20px;
+    }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 993px) {
     .navbar-expand-lg {
         display: none;
     }
