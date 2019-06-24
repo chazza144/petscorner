@@ -13,6 +13,7 @@ body {
 
 .bodydesign {
     background-color: #fffafa;
+    border-radius: 10px;
 }
 
 
@@ -43,14 +44,6 @@ body {
     float: left;
     border-radius: 10px;
     margin: 10px;
-}
-
-
-/* -----------Harlow Council Img - TO FIX (after adding)------------- */
-
-.harlowimg {
-    height: ;
-    width: ;
 }
 
 
@@ -115,19 +108,37 @@ h1 {
 .sectioncontent {
     padding: 20px 20px 20px 20px;
     margin-top: 20px;
-    border-radius: 10px;
+    
 }
 
 .subtitlefont {
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 1.75rem;
+    border-radius: 10px;
 }
 
 .contenttext {
     font-family: 'Nunito', sans-serif;
 }
 
+.calendarsection{
+    margin: 20px 0px 0px 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+.calendarsectionfirst{
+    margin-left: 0px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.calendarsectionlast{
+    margin-left: 10px;
+    margin-right: 0px;
+    background-color: white;
+    border-radius: 10px;
+}
 
 
 
@@ -144,8 +155,8 @@ h1 {
 
 .images {
     border-radius: 10px;
-
 }
+
 
 /* ----------------------------------------Footer */
 
@@ -213,8 +224,7 @@ footer {
 .form-popup {
     display: none;
     position: fixed;
-    bottom: 40%;
-    right: 20%;
+    bottom: 5%;
     border: 3px solid #D7D7D7;
     z-index: 9;
     border-radius: 10px;
@@ -229,7 +239,6 @@ footer {
     border-radius: 10px;
 }
 
-/* Full-width input fields */
 
 .form-container input[type=text],
 .form-container input[type=email] {
@@ -240,7 +249,6 @@ footer {
     background: #f1f1f1;
 }
 
-/* When the inputs get focus, do something */
 
 .form-container input[type=text]:focus,
 .form-container input[type=text]:focus {
@@ -251,7 +259,7 @@ footer {
 .form-container input[type=email]:focus,
 .form-container input[type=email]:focus {
     background-color: #ddd;
-    outline: none; 
+    outline: none;
 }
 
 #msg {
@@ -265,7 +273,7 @@ footer {
 
 #msg:focus {
     background-color: #ddd;
-    outline: none; 
+    outline: none;
 }
 
 .form-container .btn {
@@ -275,7 +283,7 @@ footer {
     border: none;
     cursor: pointer;
     width: 100%;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     opacity: 0.8;
 }
 
@@ -293,10 +301,12 @@ footer {
 /* ----------------------------------------Media */
 
 @media (max-width: 992px) {
-
     .menubutton {
         display: none;
     }
+}
+
+/*
     .form-popup {
         position: fixed;
         bottom: 5%;
@@ -310,8 +320,7 @@ footer {
         right: 38%;
         top: 10%;
     }
-}
-
+}*/
 
 @media (min-width: 993px) {
     .navbar-expand-lg {
