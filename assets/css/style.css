@@ -109,8 +109,120 @@ a:-webkit-any-link {
 
 
 
-
 /* -----------Content sections------------- */
+
+.sectioncontent {
+    padding: 20px 20px 20px 20px;
+    margin-top: 15px;
+
+}
+
+.subtitlefont {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1.75rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contenttext {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+}
+
+/*--- TO FIX EVENT CONTENT ---*/
+
+.sectioncontentevent {
+    padding: 20px 5px 5px 20px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+ h5 {
+ font-weight: bold;
+}
+
+.eventleft {
+    margin-left: 0px;
+}
+
+.eventmiddle {
+    margin: 0px 10px 0px 10px;
+}
+
+.eventright {
+    margin-right: 0px;
+}
+
+
+/* -----------Images------------- */
+
+.imgreindeer {
+    height: 250px;
+    width: 280px;
+    float: left;
+    border-radius: 10px;
+    margin: 10px;
+    display:block;
+}
+
+.homeimages {
+    border-radius: 10px;
+}
+
+.imgemily {
+    height: 200px;
+    width: 220px;
+    float: left;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.harlowlogo {
+    padding-top: 5px;
+    max-height: 100px;
+}
+
+.imgevents {
+    height: 250px;
+    border-radius: 10px;
+    margin: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #333333;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.map {
+    height: 500px;
+    width: 725px;
+    border-radius: 10px;
+    margin: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.volunteers {
+    max-height: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    display: block;
+    float: right;
+}
+
+.piglets {
+    max-height: 250px;
+    border-radius: 10px;
+    margin: 10px;
+    display: block;
+    float: left;
+}
+
+
+/* -----------Image slider------------- */
+
 
 .fling-minislide {
     width: 100%;
@@ -154,103 +266,11 @@ a:-webkit-any-link {
     animation-delay: 15s;
 }
 
-
-
-
-
-
-
-
-.sectioncontent {
-    padding: 20px 20px 20px 20px;
-    margin-top: 20px;
-
-}
-
-.subtitlefont {
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-    font-size: 1.75rem;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.contenttext {
-    font-family: 'Nunito', sans-serif;
-}
-
-/*--- TO FIX EVENT CONTENT ---*/
-
-.sectioncontentevent {
-    padding: 20px 5px 5px 20px;
-    margin-top: 20px;
-}
-
-.eventleft {
-    margin-left: 0px;
-}
-
-.eventmiddle {
-    margin: 0px 10px 0px 10px;
-}
-
-.eventright {
-    margin-right: 0px;
-}
-
-
-/* -----------Images------------- */
-
-.imgreindeer {
-    height: 250px;
-    width: 250px;
-    float: left;
-    border-radius: 10px;
-    margin: 10px;
-}
-
-.homeimages {
-    border-radius: 10px;
-}
-
-.imgemily {
-    height: 200px;
-    width: 220px;
-    float: left;
-    border-radius: 10px;
-    margin: 10px;
-}
-
-.harlowlogo {
-    padding-top: 5px;
-    max-height: 100px;
-}
-
-.imgevents {
-    height: 250px;
-    border-radius: 10px;
-    margin: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.map {
-    height: 500px;
-    width: 725px;
-    border-radius: 10px;
-    margin: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
 /* ----------------------------------------Footer */
 
 footer {
     padding: 10px 0px 5px 0px;
-    margin-top: 20px;
+    margin-top: 15px;
     background-color: #D7D7D7;
     border-radius: 10px 10px 0px 0px;
 }
@@ -403,11 +423,20 @@ footer {
     .homeimages {
         display: none;
     }
+    
+/*---delete when amending map */
+    .map {
+        max-height:250px;
+        max-width:300px;
+    }
 }
 
 @media (max-width: 763px) {
     .harlowlogo {
         display: none;
+    }
+    .volunteers, .piglets {
+        max-width: 300px;
     }
 
 }
