@@ -12,17 +12,6 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <script>
-        function openForm() {
-            document.getElementById("myForm").style.display = "block";
-        }
-
-        function closeForm() {
-            document.getElementById("myForm").style.display = "none";
-        }
-    </script>
-
-
     <title>Pets Corner</title>
 
 </head>
@@ -31,51 +20,47 @@
 
 <body>
 
-    <!-- Nav Bar-->
 
-    <nav class="container navbar navbar-expand-lg navbar-light">
-
-        <button class="navbarbuttonproperties ml-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-        <div class="collapse navbar-collapse navbarlistproperties" id="navbarNav">
-
-            <img class="imgemily" src="assets/images/emily2.jpg" alt="pig">
-            <ul class="text-right navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="whatson.html">Whats On</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="venuehire.html">Venue Hire</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Farm Friends</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-
-            </ul>
-        </div>
-    </nav>
 
     <!--Header-->
     <header>
 
-        <div class="container titlecontainerfix bodydesign">
+        <div class="container-fluid titlecontainerfix bodydesign">
 
             <div class="row">
-
-                <img class="col-md-2 harlowlogo" src="assets/images/harlowcouncil.png" alt="harlowlogo">
-                <div class="col-lg-8 col-md-8 col-sm-12 text-uppercase">
+                <div class="col-2">
+                    <img class="harlowlogo" src="assets/images/harlowcouncil.png" alt="harlowlogo">
+                </div>
+                <div class="col-8 col-md-8 text-uppercase">
                     <h1 class="text-center maintitle">Pets Corner</h1>
                     <h5 class="harlowessex">Harlow, Essex</h5>
                 </div>
-                <div class="col-md-2">
-
+                <div class="col-2">
+                    <!-- Nav Bar-->
+                    <nav class="container navbar navbar-expand-lg navbar-light">
+                        <button class="navbarbuttonproperties ml-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse navbarlistproperties" id="navbarNav">
+                            <ul class="text-right navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="whatson.html">Whats On</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="venuehire.html">Venue Hire</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Farm Friends</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="aboutus.html">About Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
 
@@ -107,10 +92,10 @@
                         <p class="navlinkbutton buttontext">Farm Friends</p>
                     </div>
                 </a>
-                <a href="contact.html">
+                <a href="aboutus.html">
                     <div class="menubutton">
                         <i class="fa fa-map-pin" aria-hidden="true"></i>
-                        <p class="navlinkbutton buttontext">Contact</p>
+                        <p class="navlinkbutton buttontext">About Us</p>
                     </div>
                 </a>
             </div>
@@ -120,12 +105,12 @@
 
 
     <!--Main-->
-    <main class="container">
+    <main class="container-fluid">
         <section class="row">
             <div class="bodydesign sectioncontent">
 
                 <div class="fling-minislide homeimages">
-                    <img src="assets/images/imageslider/alpaca1.jpg" alt="Slide 4" />
+                    <img src="assets/images/imageslider/alpaca1.jpg" class="alpacafix" alt="Slide 4" />
 
                     <img src="assets/images/imageslider/fish.jpg" alt="Slide 3" />
 
@@ -134,7 +119,7 @@
                     <img src="assets/images/imageslider/pony1.jpg" alt="Slide 1" />
                 </div>
 
-                <div class="justify-content-center text-center subtitlefont text-uppercase">COME VISIT!</div>
+                <div class="text-center subtitlefont text-uppercase">COME VISIT!</div>
                 <p class="col-12 contenttext">
                     Opened in 1966, Pets' Corner is a small, friendly farm located in Harlow Town Park. It has a large selection of traditional farm animals, such as rabbits, chickens and ducks, more exotic animals such as Reindeer, Llamas and Alpacas, as well as a number
                     of rare breeds including Red Poll cows, Essex Saddleback and Tamworth pigs. <br>Pets' Corner is free to enter but welcomes donations in the box on site. You can also feed our friends with a bag of pet food from
@@ -156,8 +141,7 @@
 
                     <p class="col-12 text-left">
                         We are delighted to report that we now have a Male reindeer calf born on the 15th may!
-                    <br>
-                        He has been joined by a female reindeer calf. Mum (Bracken) and baby doing well.
+                        <br> He has been joined by a female reindeer calf. Mum (Bracken) and baby doing well.
                         <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         Duis aute irure dolor int occaecat
                     </p>
@@ -173,8 +157,8 @@
                 <img class="volunteers" src="assets/images/volunteers.jpg" alt="volunteers">
                 <p class="col contenttext">
                     If it wasn’t for our volunteers we would not be able to do what we do for you... Our wonderful volunteers were honoured this week by our bosses (Harlow Council) who held a special celebration event as part of national volunteers’ week. Our volunteers
-                    work alongside our staff to care for our animals. The Friends of Harlow Pets corner volunteers, who run the gift shop and organise fundraising events, were also honoured at the same event. <br>Thank you to our wonderful volunteers for
-                    all the work you do
+                    work alongside our staff to care for our animals. The Friends of Harlow Pets corner volunteers, who run the gift shop and organise fundraising events, were also honoured at the same event. <br>Thank you to our wonderful
+                    volunteers for all the work you do
                 </p>
             </div>
         </section>
@@ -250,11 +234,19 @@
 
     </footer>
 
-    <!--Bootstrap core JavaScript -->
+    <!--JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
 
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
 
 </body>
 
