@@ -12,17 +12,7 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <script>
-        function openForm() {
-            document.getElementById("myForm").style.display = "block";
-        }
-        function closeForm() {
-            document.getElementById("myForm").style.display = "none";
-        }
-    </script>
-
-
-    <title>Pets Corner - Whats On</title>
+    <title>Pets Corner</title>
 
 </head>
 
@@ -30,87 +20,82 @@
 
 <body>
 
-    <!-- Nav Bar -->
 
-    <nav class="container navbar navbar-expand-lg navbar-light">
-
-        <button class="navbarbuttonproperties ml-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-        <div class="collapse navbar-collapse navbarlistproperties" id="navbarNav">
-
-            <img class="imgemily" src="assets/images/emily2.jpg" alt="pig">
-            <ul class="text-right navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="whatson.html">Whats On</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="venuehire.html">Venue Hire</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Farm Friends</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-
-            </ul>
-        </div>
-    </nav>
 
     <!--Header-->
     <header>
 
-        <div class="container titlecontainerfix bodydesign">
+        <div class="container-fluid title-container-fix body-design">
 
             <div class="row">
-
-                <img class="col-md-2 harlowlogo" src="assets/images/harlowcouncil.png" alt="harlowlogo">
-                <div class="col-lg-8 col-md-8 col-sm-12 text-uppercase" style="text-center">
-                    <h1 class="text-center maintitle">Pets Corner</h1>
+                <div class="col-lg-2">
+                    <img class="harlowlogo" src="assets/images/harlowcouncil.png" alt="harlowlogo">
+                </div>
+                <div class="col-8 col text-uppercase">
+                    <h1 class="text-center main-title">Pets Corner</h1>
                     <h5 class="harlowessex">Harlow, Essex</h5>
                 </div>
-                <div class="col-md-2">
-
+                <div class="col-2 offset-2">
+                    <!-- Nav Bar-->
+                    <nav class="container navbar navbar-expand-lg navbar-light">
+                        <button class="navbarbuttonproperties ml-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse navbarlistproperties" id="navbarNav">
+                            <ul class="text-right navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="whatson.html">Whats On</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="venuehire.html">Venue Hire</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="farmfriends.html">Farm Friends</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="aboutus.html">About Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
-
 
 
             <!-- Menu Buttons -->
 
             <div class="row justify-content-center">
                 <a href="index.html">
-                    <div class="menubutton">
+                    <div class="menu-button">
                         <i class="fa fa-home" aria-hidden="true"></i>
-                        <p class="navlinkbutton buttontext">Home</p>
+                        <p class="navlinkbutton button-text">Home</p>
                     </div>
                 </a>
                 <a href="whatson.html">
-                    <div class="menubutton">
-                        <i class="fa fa-calendar" style="none" aria-hidden="true"></i>
-                        <p class="navlinkbutton buttontext">Whats On</p>
+                    <div class="menu-button">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <p class="nav-link-button button-text">Whats On</p>
                     </div>
                 </a>
                 <a href="venuehire.html">
-                    <div class="menubutton">
+                    <div class="menu-button">
                         <i class="fa fa-birthday-cake" aria-hidden="true"></i>
-                        <p class="navlinkbutton buttontext">Venue Hire</p>
+                        <p class="navlinkbutton button-text">Venue Hire</p>
                     </div>
                 </a>
-                <a href="#">
-                    <div class="menubutton">
+                <a href="farmfriends.html">
+                    <div class="menu-button">
                         <i class="fa fa-paw" aria-hidden="true"></i>
-                        <p class="navlinkbutton buttontext">Farm Friends</p>
+                        <p class="navlinkbutton button-text">Farm Friends</p>
                     </div>
                 </a>
-                <a href="contact.html">
-                    <div class="menubutton">
+                <a href="aboutus.html">
+                    <div class="menu-button">
                         <i class="fa fa-map-pin" aria-hidden="true"></i>
-                        <p class="navlinkbutton buttontext">Contact</p>
+                        <p class="navlinkbutton button-text">About Us</p>
                     </div>
                 </a>
             </div>
@@ -120,22 +105,22 @@
 
 
     <main>
-        <section class="container">
-            <div class="row">
-                <div class="subtitlefont text-uppercase col-12 bodydesign sectioncontent">Whats On!</div>
+        <section class="container-fluid image-fluid">
+            <div class="row body-design section-content">
+                <h3 class="subtitle-font text-uppercase col-12">Whats On & upcoming events!</h3>
             </div>
-            <div class="row contenttext">
-                <div class="col col-lg-4 bodydesign sectioncontentevent eventleft">
+            <div class="row text-center content-text body-design section-content">
+                <div class="col col-lg-4">
                     <img class="imgevents" src="assets/images/flyers/weekender.jpg" alt="weekender">
                     <h5>Harlow's Big Weekender</h5>
                     <p>29-30 June 2019<br>Join us for Harlows Big Weekender Carnival!</p>
                 </div>
-                <div class="col col-lg-4 bodydesign sectioncontentevent">
+                <div class="col col-lg-4">
                     <img class="imgevents" src="assets/images/flyers/gettogether.jpg" alt="gettogether">
                     <h5>The Great Get Together</h5>
                     <p>22 June 2019<br>Family Fun Day!</p>
                 </div>
-                <div class="col col-lg-4 bodydesign sectioncontentevent">
+                <div class="col col-lg-4">
                     <img class="imgevents" src="assets/images/flyers/barndance.jpg" alt="barndance">
                     <h5>Barn Dance</h5>
                     <p>22 June 2019<br>Put on your Cowboy Boots and join us!</p>
@@ -150,7 +135,7 @@
     </main>
 
     <!--Footer-->
-    <footer class="container-fluid body-design">
+    <footer class="container-fluid">
 
         <div class="row no-gutters footertext">
 

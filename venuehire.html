@@ -12,18 +12,7 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <script>
-        function openForm() {
-            document.getElementById("myForm").style.display = "block";
-        }
-
-        function closeForm() {
-            document.getElementById("myForm").style.display = "none";
-        }
-    </script>
-
-
-    <title>Pets Corner - Venue Hire</title>
+    <title>Pets Corner</title>
 
 </head>
 
@@ -31,85 +20,81 @@
 
 <body>
 
-    <!-- Nav Bar-->
 
-    <nav class="container navbar navbar-expand-lg navbar-light">
-
-        <button class="navbarbuttonproperties ml-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-        <div class="collapse navbar-collapse navbarlistproperties" id="navbarNav">
-
-            <img class="imgemily" src="assets/images/emily2.jpg" alt="pig">
-            <ul class="text-right navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="whatson.html">Whats On</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="venuehire.html">Venue Hire</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Farm Friends</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-
-            </ul>
-        </div>
-    </nav>
 
     <!--Header-->
     <header>
 
-        <div class="container titlecontainerfix bodydesign">
-
+        <div class="container-fluid title-container-fix body-design">
             <div class="row">
-
-                <img class="col-md-2 harlowlogo" src="assets/images/harlowcouncil.png" alt="harlowlogo">
-                <div class="col-lg-8 col-md-8 col-sm-12 text-uppercase" style="text-center">
-                    <h1 class="text-center maintitle">Pets Corner</h1>
+                <div class="col-lg-2">
+                    <img class="harlowlogo" src="assets/images/harlowcouncil.png" alt="harlowlogo">
+                </div>
+                <div class="col-8 col text-uppercase">
+                    <h1 class="text-center main-title">Pets Corner</h1>
                     <h5 class="harlowessex">Harlow, Essex</h5>
                 </div>
-                <div class="col-md-2">
-
+                <div class="col-2 offset-2">
+                    <!-- Nav Bar-->
+                    <nav class="container navbar navbar-expand-lg navbar-light">
+                        <button class="navbarbuttonproperties ml-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse navbarlistproperties" id="navbarNav">
+                            <ul class="text-right navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="whatson.html">Whats On</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="venuehire.html">Venue Hire</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="farmfriends.html">Farm Friends</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="aboutus.html">About Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
+
 
             <!-- Menu Buttons -->
 
             <div class="row justify-content-center">
                 <a href="index.html">
-                    <div class="menubutton">
+                    <div class="menu-button">
                         <i class="fa fa-home" aria-hidden="true"></i>
-                        <p class="navlinkbutton buttontext">Home</p>
+                        <p class="navlinkbutton button-text">Home</p>
                     </div>
                 </a>
                 <a href="whatson.html">
-                    <div class="menubutton">
-                        <i class="fa fa-calendar" style="none" aria-hidden="true"></i>
-                        <p class="navlinkbutton buttontext">Whats On</p>
+                    <div class="menu-button">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <p class="nav-link-button button-text">Whats On</p>
                     </div>
                 </a>
                 <a href="venuehire.html">
-                    <div class="menubutton">
+                    <div class="menu-button">
                         <i class="fa fa-birthday-cake" aria-hidden="true"></i>
-                        <p class="navlinkbutton buttontext">Venue Hire</p>
+                        <p class="navlinkbutton button-text">Venue Hire</p>
                     </div>
                 </a>
-                <a href="#">
-                    <div class="menubutton">
+                <a href="farmfriends.html">
+                    <div class="menu-button">
                         <i class="fa fa-paw" aria-hidden="true"></i>
-                        <p class="navlinkbutton buttontext">Farm Friends</p>
+                        <p class="navlinkbutton button-text">Farm Friends</p>
                     </div>
                 </a>
-                <a href="contact.html">
-                    <div class="menubutton">
+                <a href="aboutus.html">
+                    <div class="menu-button">
                         <i class="fa fa-map-pin" aria-hidden="true"></i>
-                        <p class="navlinkbutton buttontext">Contact</p>
+                        <p class="navlinkbutton button-text">About Us</p>
                     </div>
                 </a>
             </div>
@@ -119,21 +104,50 @@
 
 
     <!--Main-->
-    <main>
-        <section class="container contenttext">
-            <div class="row">
-                <div class="col-12 subtitlefont text-uppercase bodydesign sectioncontent">COME CELEBRATE WITH US!</div>
+    <main class="container-fluid">
+        <section="row">
+            <div class="body-design section-content">
+                <h3 class="text-uppercase subtitle-font">Venue hire!</h3>
             </div>
-            <div class="row bodydesign sectioncontent contenttext">
-                <img class="piglets" src="assets/images/piglets.JPG" alt="piglets">
+            <div class="col-12 body-design section-content">
+                <img src="assets/images/party.jpg" id="party" class="image-fluid" alt="party">
+                <h5>Birthday Parties</h5>
+                <p class="content-text">
+                    We offer a range of birthday parties featuring hands on experience with our animals. We can offer exclusive use of our classroom, a chance for the children in the party to meet some of our smaller animals (either
+                    'cute and cuddly', or 'creepy crawlies and snakes') along with a trained member of staff to answer questions. There is also an option of Pets’ Corner goody bags.
+                    <br><strong>Prices: <br>£7.50 per head - minimum fee of £50 with a £10 non-refundable deposit on booking <br>£1.50 per goody bag</strong><br>Payment can be made by cash or cheque. <br>Pets’ Corner cannot provide food, beverages or
+                    decorations for your party, but you are allowed to bring these along, half an hour before the party starts.
+                </p>
             </div>
-        </section>
+            <div class="col body-design section-content">
+
+                <h5>Pets' Corner corporate events</h5>
+                <p class="content-text">
+                    Pets' Corner hosts a variety of corporate events, arranging team building days and family petting days. <br>Please contact us to see how an event can be tailored to your business.
+                </p>
+                <h5>Individual/group corporate sponsorship</h5>
+                <p class="content-text">Enjoyed your visit, made a new friend or just looking at gifts for friends then why not sponsor one of our animals? Sponsorship is available to anyone who loves animals, from companies to individuals, families or schools. Company sponsorship
+                    will promote the company name and logo on the animal’s pen and the company will receive a mention in any publicity regarding the animal.
+                    <br><strong><a href="assets/forms/sponsorship-application.pdf" target="_blank" class="sponsorform">More information and Sponsorship Application Form (pdf)</a></strong>
+                </p>
+            </div>
+            <div class="col body-design section-content">
+                <h5>Reindeer visits</h5>
+                <p class="content-text">
+                    Why not enjoy a visit from a reindeer to add the wow factor to your Christmas event? <br>Reindeer make perfect special guests at Christmas bazaars, Christmas lights switch-on, or school/nursery Christmas events.
+                    <br><strong>Prices for one reindeer:<br>
+                    Harlow area £245 Outside Harlow £300 (subject to distance travelling from Harlow)<br> Corporate events £500+ Due to animal welfare the maximum duration the reindeer can attend an event is two hours and would need to be an outside location
+                    preferably.</strong><br> The reindeer come self-contained with their own pen and handler insurance and risk assessments. Pets' Corner completes the movement licence for the reindeer and provides hand soap.
+                    <img src="assets/images/snowreindeer.jpg" id="snow-deer" class="image-fluid" alt="snow reindeer">
+                </p>
+            </div>
+            </section>
 
     </main>
 
 
     <!--Footer-->
-    <footer class="container-fluid body-design">
+    <footer class="container-fluid">
 
         <div class="row no-gutters footertext">
 

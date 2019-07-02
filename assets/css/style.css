@@ -11,7 +11,7 @@ body {
 }
 
 
-.bodydesign {
+.body-design {
     background-color: #fffafa;
     border-radius: 10px;
 }
@@ -48,7 +48,7 @@ h5 {
     z-index: 9;
 }
 
-.navlinkbutton {
+.nav-link-button {
     text-decoration: none;
 }
 
@@ -59,7 +59,7 @@ a:-webkit-any-link {
 
 /* -----------Header------------- */
 
-.titlecontainerfix {
+.title-container-fix {
     border-radius: 10px;
     margin-top: 15px;
     text-align: center;
@@ -70,7 +70,7 @@ a:-webkit-any-link {
     box-shadow: 5px 5px 5px grey;
 }
 
-.maintitle {
+.main-title {
     text-shadow: 2px 2px 3px grey;
     font-family: 'Gorditas', cursive;
 }
@@ -83,7 +83,7 @@ a:-webkit-any-link {
 
 /* -----------MenuButtons------------- */
 
-.menubutton {
+.menu-button {
     margin: 10px 10px 60px 10px;
     height: 80px;
     width: 80px;
@@ -97,19 +97,19 @@ a:-webkit-any-link {
 
 }
 
-.menubutton:hover {
+.menu-button:hover {
     opacity: 1.0;
     color: white;
 }
 
-.menubutton i {
+.menu-button i {
     padding-top: 15px;
     font-size: 45px;
     color: white;
 
 }
 
-.buttontext {
+.button-text {
     text-align: center;
     margin-top: 20px;
     padding-bottom: 10px;
@@ -120,49 +120,49 @@ a:-webkit-any-link {
 
 /* -----------Content sections------------- */
 
-.sectioncontent {
+.section-content {
     padding: 20px 20px 20px 20px;
     margin-top: 15px;
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 5px 5px 5px grey;
+    font-family: 'Nunito', sans-serif;
+
 }
 
-.subtitlefont {
+.subtitle-font {
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 1.75rem;
     border-radius: 10px;
     text-align: center;
+    margin-bottom: 0;
 }
 
-.contenttext {
+.content-text {
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
 }
 
-
-
-/*--- TO FIX EVENT CONTENT ---*/
-
-.sectioncontentevent {
-    padding: 20px 5px 5px 20px;
-    margin-top: 15px;
+#birthdayimg {
+    position: relative;
     text-align: center;
+    color: white;
+    max-width:300px;
 }
 
-.eventleft {
-    margin-left: 0px;
+#birthday-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: blue;
+    font-size: larger;
+    width:150px;
 }
 
-.eventmiddle {
-    margin: 0px 10px 0px 10px;
-}
 
-.eventright {
-    margin-right: 0px;
-}
 
 /* -----------Images------------- */
 
@@ -172,7 +172,6 @@ a:-webkit-any-link {
     float: left;
     border-radius: 10px;
     margin: 10px;
-    display: block;
 }
 
 .homeimages {
@@ -193,7 +192,7 @@ a:-webkit-any-link {
 }
 
 .imgevents {
-    height: 250px;
+    width: 250px;
     border-radius: 10px;
     margin: 10px;
     display: block;
@@ -217,28 +216,42 @@ a:-webkit-any-link {
     max-height: 300px;
     border-radius: 10px;
     margin: 10px;
-    display: block;
     float: right;
 }
 
 .piglets {
-    max-height: 250px;
+    max-height: 200px;
     border-radius: 10px;
     margin: 10px;
-    display: block;
     float: left;
 }
 
-.imgowl {
-    position: relative;
-    height: 200px;
-    border-radius: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+#party {
+    height: 300px;
     width: auto;
+    border-radius: 10px;
     margin-bottom: 10px;
+    float: right;
+    margin-left: 20px;
+
 }
+
+#img-owl {
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    float: left;
+    margin-right: 20px;
+}
+
+#snow-deer {
+    max-height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px
+}
+
 
 
 /* -----------Image slider------------- */
@@ -290,6 +303,7 @@ a:-webkit-any-link {
 footer {
     padding: 10px 0px 5px 0px;
     margin-top: 15px;
+    position: absolute;
     background-color: #D7D7D7;
     border-radius: 10px 10px 0px 0px;
 }
@@ -432,21 +446,20 @@ footer {
 /* ----------------------------------------Media */
 
 @media (max-width: 992px) {
-    .menubutton {
+    .menu-button {
         display: none;
     }
-    .contenttext {
+    .content-text {
         font-size: 15px;
     }
-    .subtitlefont {
+    .subtitle-font {
         font-size: 20px;
     }
     .harlowlogo {
-        max-height: 60px;
-        max-width: 120px;
+        display: none;
     }
-    .titlecontainerfix,
-    .sectioncontent {
+    .title-container-fix,
+    .section-content {
         width: 90vw;
     }
 }
@@ -466,9 +479,23 @@ footer {
     }
     .volunteers,
     .piglets {
-        max-width: 300px;
+        max-width: 230px;
     }
-    .maintitle {
+    .imgevents {
+        max-width: 230px;
+    }
+
+    #img-owl {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #party {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .main-title {
         padding-top: 5px;
         font-size: 23px
     }
@@ -476,6 +503,7 @@ footer {
     .harlowessex {
         display: none;
     }
+
     .fling-minislide {
         height: 400px;
     }
@@ -488,9 +516,8 @@ footer {
         top: 50%;
         -webkit-transform: translateY(-50%) translateX(-50%);
     }
-}
 
-/*
+    /*
     .form-popup {
         position: fixed;
         
@@ -504,12 +531,8 @@ footer {
         top: 10%;
     }
 }*/
-
-@media (min-width: 768px) {
-    .imgemily {
-        display: none;
-    }
 }
+
 
 @media (min-width: 992px) {
     .navbar-expand-lg {
@@ -518,7 +541,13 @@ footer {
     h1 {
         font-size: 65px;
     }
-
 }
 
 @media (min-width: 1300px) {}
+
+@media (max-width: 400px) {
+    .main-title {
+        padding-top: 5px;
+        font-size: 20px
+    }
+}
