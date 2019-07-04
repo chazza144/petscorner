@@ -137,7 +137,7 @@ a:-webkit-any-link {
     font-size: 1.75rem;
     border-radius: 10px;
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 .content-text {
@@ -148,30 +148,34 @@ a:-webkit-any-link {
 #birthdayimg {
     position: relative;
     text-align: center;
-    color: white;
-    max-width:300px;
+    max-width: 300px;
+    border: 3px solid grey;
+    box-shadow: 5px 5px 5px grey;
 }
 
 #birthday-text {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: blue;
-    font-size: larger;
-    width:150px;
+    color: black;
+    font-size: 25px;
+    width: 250px;
+    font-family: 'Nunito', sans-serif;
+    text-shadow: 2px 2px 3px grey;
 }
 
 
 
 /* -----------Images------------- */
 
-.imgreindeer {
-    height: 250px;
-    width: 280px;
+#imgreindeer {
+    height: auto;
+    width: 320px;
     float: left;
     border-radius: 10px;
-    margin: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .homeimages {
@@ -212,11 +216,17 @@ a:-webkit-any-link {
     margin-right: auto;
 }
 
-.volunteers {
+#volunteers {
     max-height: 300px;
     border-radius: 10px;
-    margin: 10px;
+    margin-left: 10px;
     float: right;
+}
+
+#imggoatface {
+    max-height: 400px;
+    border-radius: 10px;
+    display: inline-block;
 }
 
 .piglets {
@@ -233,6 +243,7 @@ a:-webkit-any-link {
     margin-bottom: 10px;
     float: right;
     margin-left: 20px;
+    overflow: auto;
 
 }
 
@@ -241,16 +252,30 @@ a:-webkit-any-link {
     width: auto;
     border-radius: 10px;
     margin-bottom: 10px;
-    float: left;
     margin-right: 20px;
 }
 
 #snow-deer {
-    max-height: 400px;
+    max-height: 450px;
     width: 100%;
     border-radius: 10px;
     margin-top: 15px
 }
+
+#imgschool {
+    max-height: 200px;
+    width: auto;
+    border-radius: 10px;
+    margin-top: 15px
+}
+
+#opentimesimg {
+    max-height: 450px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+}
+
 
 
 
@@ -259,9 +284,10 @@ a:-webkit-any-link {
 .fling-minislide {
     width: 100%;
     height: 200px;
-    padding-bottom: 45%;
+    padding-bottom: 40%;
     overflow: hidden;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .fling-minislide img {
@@ -357,29 +383,14 @@ footer {
 
 }
 
-
-/*------------footer contact button -----------*/
-
-/* The popup form - hidden by default */
-
-.form-popup {
-    display: none;
-    position: fixed;
-    bottom: 5%;
-    border: 3px solid #D7D7D7;
-    z-index: 9;
-    border-radius: 10px;
-}
-
-/* Add styles to the form container */
+/*------------contact------------*/
 
 .form-container {
-    max-width: 500px;
+    max-width: 100%;
     padding: 10px;
     background-color: #fffafa;
     border-radius: 10px;
 }
-
 
 .form-container input[type=text],
 .form-container input[type=email] {
@@ -423,24 +434,15 @@ footer {
     padding: 16px 20px;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 200px;
     margin-bottom: 10px;
     opacity: 0.8;
-}
-
-.form-container .cancel {
-    background-color: rgb(240, 60, 35);
 }
 
 .form-container .btn:hover,
 .open-button:hover {
     opacity: 1;
 }
-
-
-
-
-
 
 
 /* ----------------------------------------Media */
@@ -452,6 +454,14 @@ footer {
     .content-text {
         font-size: 15px;
     }
+
+    #birthdayimg {
+        border: 1px solid grey;
+        margin-bottom: 20px;
+        max-width: 100%;
+        height: 400px;
+    }
+
     .subtitle-font {
         font-size: 20px;
     }
@@ -462,14 +472,16 @@ footer {
     .section-content {
         width: 90vw;
     }
-}
+    .form-container {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #img-owl {
+        max-width: 300px;
+        height: auto;
+    }
 
-
-/*---delete when amending map */
-
-.map {
-    max-height: 250px;
-    max-width: 300px;
 }
 
 
@@ -484,17 +496,33 @@ footer {
     .imgevents {
         max-width: 230px;
     }
+    .school-img-padding {
+        margin-bottom: 10px !important
+    }
+    #birthday-text {
+        font-size: 15px;
+    }
 
+
+    #party,
+    #imgschool,
+    #opentimesimg,
+    #imgreindeer,
+    #imggoatface {
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    #volunteers,
     #img-owl {
         max-width: 100%;
         height: auto;
+        margin-bottom: 20px;
     }
-
-    #party {
-        max-width: 100%;
-        height: auto;
+    .form-container .btn {
+        width: 100%;
     }
-
     .main-title {
         padding-top: 5px;
         font-size: 23px
@@ -516,21 +544,12 @@ footer {
         top: 50%;
         -webkit-transform: translateY(-50%) translateX(-50%);
     }
-
-    /*
-    .form-popup {
-        position: fixed;
-        
-    }
 }
 
-@media (min-width: 768px) {
-    .form-popup {
-        position: fixed;
-        right: 38%;
-        top: 10%;
+@media (min-width: 763px) {
+    #buttoncentered {
+        display: inline-block;
     }
-}*/
 }
 
 
@@ -543,11 +562,27 @@ footer {
     }
 }
 
-@media (min-width: 1300px) {}
-
-@media (max-width: 400px) {
-    .main-title {
-        padding-top: 5px;
-        font-size: 20px
+@media (min-width: 1200px) {
+    #imggoatface {
+        margin-top: 70px;
+    }
+    #opentimesimg {
+        margin-top: 0px;
     }
 }
+
+    @media only screen and (max-width: 1300px) and (min-width: 993px) {
+        #opentimesimg {
+            max-width: 350px;
+        }
+        #imgreindeer {
+            float: inherit;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .main-title {
+            padding-top: 5px;
+            font-size: 20px
+        }
+    }

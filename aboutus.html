@@ -106,40 +106,71 @@
 
     <!--Main-->
     <main class="container-fluid">
-        <section class="row">
-            <div class="body-design section-content">
+        <section class="row body-design section-content">
+            <div class="col-md-6">
                 <h3 class="subtitle-font text-uppercase">about us</h3>
-                <img src="assets/images/owl.jpg" id="img-owl" class="image-fluid" alt="owl">
-                <p class="col-md-12 content-text">
+                <p class="content-text">
                     Opened in 1966, Pets' Corner is a small, friendly farm located in Harlow Town Park. It has a large selection of traditional farm animals, such as rabbits, chickens and ducks, more exotic animals such as Reindeer, Llamas and Alpacas, as well as a number
                     of rare breeds including Red Poll cows, Essex Saddleback and Tamworth pigs. <br>Pets' Corner is free to enter but welcomes donations in the box on site. You can also feed our friends with a bag of pet food from
                     our shop on site and feed vending machines.
                 </p>
             </div>
-        </section>
-        <section class="row">
-            <div class="body-design section-content">
+            <div class="col-md-6">
                 <h3 class="subtitle-font text-uppercase">Facilities</h3>
-                <img src="assets/images/owl.jpg" id="img-owl" class="image-fluid" alt="owl">
-                <ul class="content-text text-left">
-                    <li>The Learning Centre</li>
-                    <li>Gift shop</li>
-                    <li>Hand washing facilites</li>
-                    <li>Toilets open 9am to 5pm (includes a Changing Places toilet which you can access by completing the Changing Places Key Application Request Form)</li>
-                    <li>The Spurriers House Café</li>
-                </ul>
+                <div class="row">
+                    <ul class="content-text col-6 col-md-5 offset-md-1">
+                        <li>The Learning Centre</li>
+                        <li>Gift shop</li>
+                        <li>Hand washing facilites</li>
+                    </ul>
+                    <ul class="content-text col-6 col-md-5 ">
+                        <li>Toilets open 9am to 5pm</li>
+                        <li>The Spurriers House Café</li>
+                        <li>Childrens Playground</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="subtitle-font text-uppercase">Our Address</h3>
+                    <p class="content-text">Spurriers, Town Park<br>Harlow, Essex<br>CM20 2QG</p>
+                </div>
             </div>
         </section>
+        <a name="contactform"></a>
+        <section class="row body-design section-content">
+            <div class="col-xl-5 offset-xl-1">
+                <h3 class="subtitle-font text-center text-uppercase">Contact Us</h3>
+                <form action="/action_page.php" class="form-container" method="post">
+                    <p>If you have any questions, or wish to find out more information, please do not hesitate to contact us via the form below :</p>
+
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" id="name" placeholder="Enter Name" name="name" required>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" id="email" placeholder="Enter Email" name="email" required>
+
+                    <label for="msg"><b>Message</b></label><br>
+                    <textarea id="msg" placeholder="Please enter your message here" name="user_message" required></textarea>
+                    <div class="text-center">
+                        <div id="buttoncentered">
+                            <button type="submit" class="btn">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-xl-5 text-center">
+                <img id="imggoatface" src="assets/images/goat1.jpg" alt="goatface">
+            </div>
+        </section>
+
         <section class="row">
             <div class="body-design section-content">
-
                 <div class="subtitle-font">THANKING OUR VOLUNTEERS</div>
-                <img class="volunteers" src="assets/images/volunteers.jpg" alt="volunteers">
-                <p class="col content-text">
+                <img id="volunteers" src="assets/images/volunteers.jpg" alt="volunteers">
+                <p class="content-text">
                     If it wasn’t for our volunteers we would not be able to do what we do for you... Our wonderful volunteers were honoured this week by our bosses (Harlow Council) who held a special celebration event as part of national volunteers’ week. Our volunteers
                     work alongside our staff to care for our animals. The Friends of Harlow Pets corner volunteers, who run the gift shop and organise fundraising events, were also honoured at the same event. <br>Thank you to our wonderful
                     volunteers for all the work you do.
-                    <p class="col content-text">
+                    <p class="content-text">
                         If you're interested in volunteering please see the <strong><a href="farmfriends.html">Farm Friends page</a></strong>
                     </p>
                 </p>
@@ -147,7 +178,6 @@
         </section>
 
     </main>
-
     <!--Footer-->
     <footer class="container-fluid">
 
@@ -155,32 +185,13 @@
 
             <div class="col offset-md-2">
                 <h6 class=footertexttitle>Contact Us</h6>
+                <a href="aboutus.html#contactform"><button type="button" class="btn btn-primary">Click Here!</button></a>
 
-                <button type="button" class="btn btn-primary" onclick="openForm()">Click Here!</button>
-                <div class="d-flex flex-column">
-                    <div class="form-popup" id="myForm">
-                        <form action="/action_page.php" class="form-container" method="post">
-                            <h2>Contact Us</h2>
-
-                            <label for="name"><b>Name</b></label>
-                            <input type="text" id="name" placeholder="Enter Name" name="name" required>
-
-                            <label for="email"><b>Email</b></label>
-                            <input type="email" id="email" placeholder="Enter Email" name="email" required>
-
-                            <label for="msg"><b>Message</b></label><br>
-                            <textarea id="msg" placeholder="Please enter your message here" name="user_message" required></textarea>
-
-                            <button type="submit" class="btn">Send</button>
-                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                        </form>
-                    </div>
-                </div>
             </div>
 
             <div class="col">
                 <h6 class=footertexttitle>Find Us</h6>
-                <p>Spurriers<br>Town Park<br>Harlow, Essex</p>
+                <p>Spurriers, Town Park<br>Harlow, Essex<br>CM20 2QG</p>
 
             </div>
 
@@ -194,13 +205,13 @@
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <a target="_blank" href="https://www.tripadvisor.co.uk/Attraction_Review-g190784-d4079988-Reviews-Pets_Corner-Harlow_Essex_England.html">
+                            <i class="fa fa-tripadvisor" aria-hidden="true"></i>
                             <span class="sr-only">Twitter</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a target="_blank" href="#">
+                        <a target="_blank" href="https://www.instagram.com/">
                             <i class="fa fa-instagram" aria-hidden="true"></i>
                             <span class="sr-only">Instagram</span>
                         </a>
@@ -221,15 +232,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
-        function openForm() {
-            document.getElementById("myForm").style.display = "block";
-        }
-
-        function closeForm() {
-            document.getElementById("myForm").style.display = "none";
-        }
-    </script>
 
 </body>
 
