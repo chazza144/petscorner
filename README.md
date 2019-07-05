@@ -40,6 +40,7 @@ Also, children’s parties and corporate events are another good way of raising 
 ### Features Left to Implement
 I would like to add a ‘Fun’ page for children which would include some games to play. And perhaps more information of the breeds and names of the animals on the farm. 
 Change the Contact Form to a pop up form accessible on all pages. 
+I'd like to make the PETS CORNER title text into a link which takes you back to the home page
 
 
 ## Testing
