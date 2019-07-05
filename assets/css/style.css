@@ -1,15 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Gorditas:700|Nunito&display=swap');
 
-/*
-font-family: 'Nunito', sans-serif;
-font-family: 'Gorditas', cursive;*/
-
 /* -----------body design------------- */
-
 body {
     background-color: #87cefa;
 }
-
 
 .body-design {
     background-color: #fffafa;
@@ -20,16 +14,13 @@ h5 {
     font-weight: bold;
 }
 
-
 /* ------Navbar------*/
-
 .navbar {
     padding-top: 0;
     padding-right: 1px;
     width: 100vw;
     float: right;
 }
-
 
 .navbarbuttonproperties {
     background-color: #fffafa;
@@ -56,9 +47,7 @@ a:-webkit-any-link {
     text-decoration: none;
 }
 
-
 /* -----------Header------------- */
-
 .title-container-fix {
     border-radius: 10px;
     margin-top: 15px;
@@ -80,9 +69,7 @@ a:-webkit-any-link {
     font-family: 'Gorditas', cursive;
 }
 
-
 /* -----------MenuButtons------------- */
-
 .menu-button {
     margin: 10px 10px 60px 10px;
     height: 80px;
@@ -94,7 +81,6 @@ a:-webkit-any-link {
     background-color: #007bff;
     text-decoration: none;
     cursor: pointer;
-
 }
 
 .menu-button:hover {
@@ -106,7 +92,6 @@ a:-webkit-any-link {
     padding-top: 15px;
     font-size: 45px;
     color: white;
-
 }
 
 .button-text {
@@ -119,7 +104,6 @@ a:-webkit-any-link {
 }
 
 /* -----------Content sections------------- */
-
 .section-content {
     padding: 20px 20px 20px 20px;
     margin-top: 15px;
@@ -128,7 +112,6 @@ a:-webkit-any-link {
     margin-right: auto;
     box-shadow: 5px 5px 5px grey;
     font-family: 'Nunito', sans-serif;
-
 }
 
 .subtitle-font {
@@ -140,9 +123,18 @@ a:-webkit-any-link {
     margin-bottom: 10px;
 }
 
+.events-subtitle {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1.75rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
 .content-text {
     font-family: 'Nunito', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 #birthdayimg {
@@ -151,6 +143,8 @@ a:-webkit-any-link {
     max-width: 300px;
     border: 3px solid grey;
     box-shadow: 5px 5px 5px grey;
+    margin: 20px 0 0 10px;
+    background-color: #fffafa;
 }
 
 #birthday-text {
@@ -165,10 +159,7 @@ a:-webkit-any-link {
     text-shadow: 2px 2px 3px grey;
 }
 
-
-
 /* -----------Images------------- */
-
 #imgreindeer {
     height: auto;
     width: 320px;
@@ -180,14 +171,6 @@ a:-webkit-any-link {
 
 .homeimages {
     border-radius: 10px;
-}
-
-.imgemily {
-    height: 150px;
-    width: 180px;
-    float: left;
-    border-radius: 10px;
-    margin: 10px;
 }
 
 .harlowlogo {
@@ -206,16 +189,6 @@ a:-webkit-any-link {
     box-shadow: 5px 5px 5px grey;
 }
 
-.map {
-    height: 500px;
-    width: 725px;
-    border-radius: 10px;
-    margin: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 #volunteers {
     max-height: 300px;
     border-radius: 10px;
@@ -229,22 +202,14 @@ a:-webkit-any-link {
     display: inline-block;
 }
 
-.piglets {
-    max-height: 200px;
-    border-radius: 10px;
-    margin: 10px;
-    float: left;
-}
-
 #party {
-    height: 300px;
+    max-height: 400px;
     width: auto;
     border-radius: 10px;
     margin-bottom: 10px;
-    float: right;
-    margin-left: 20px;
+    float: left;
+    margin-right: 20px;
     overflow: auto;
-
 }
 
 #img-owl {
@@ -262,7 +227,7 @@ a:-webkit-any-link {
     margin-top: 15px
 }
 
-#imgschool {
+.imgschool {
     max-height: 200px;
     width: auto;
     border-radius: 10px;
@@ -270,17 +235,22 @@ a:-webkit-any-link {
 }
 
 #opentimesimg {
+    margin-top: 20px;
     max-height: 450px;
     width: auto;
     border-radius: 10px;
     box-shadow: 5px 5px 5px grey;
 }
 
-
-
+#imgplayground {
+    max-height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
 
 /* -----------Image slider------------- */
-
 .fling-minislide {
     width: 100%;
     height: 200px;
@@ -297,7 +267,6 @@ a:-webkit-any-link {
     width: 100%;
     height: auto;
 }
-
 
 @keyframes fling-minislide {
     25% {
@@ -324,8 +293,7 @@ a:-webkit-any-link {
     animation-delay: 15s;
 }
 
-/* ----------------------------------------Footer */
-
+/* ---------------Footer----------- */
 footer {
     padding: 10px 0px 5px 0px;
     margin-top: 15px;
@@ -380,11 +348,9 @@ footer {
     color: #6E6E6E;
     font-family: 'Nunito', sans-serif;
     display: inline;
-
 }
 
 /*------------contact------------*/
-
 .form-container {
     max-width: 100%;
     padding: 10px;
@@ -400,7 +366,6 @@ footer {
     border: none;
     background: #f1f1f1;
 }
-
 
 .form-container input[type=text]:focus,
 .form-container input[type=text]:focus {
@@ -445,24 +410,25 @@ footer {
 }
 
 
-/* ----------------------------------------Media */
+/* ----------------Media------------ */
 
 @media (max-width: 992px) {
     .menu-button {
         display: none;
     }
     .content-text {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     #birthdayimg {
         border: 1px solid grey;
-        margin-bottom: 20px;
+        margin: 20px;
         max-width: 100%;
         height: 400px;
     }
 
-    .subtitle-font {
+    .subtitle-font,
+    .events-subtitle {
         font-size: 20px;
     }
     .harlowlogo {
@@ -481,12 +447,16 @@ footer {
         max-width: 300px;
         height: auto;
     }
-
+    #opentimesimg {
+        max-width: 300px;
+        height: auto;
+        width: 80vw;
+    }
 }
 
-
 @media (max-width: 763px) {
-    .harlowlogo {
+    .harlowlogo,
+    #imgplayground {
         display: none;
     }
     .volunteers,
@@ -494,7 +464,7 @@ footer {
         max-width: 230px;
     }
     .imgevents {
-        max-width: 230px;
+        max-width: 210px;
     }
     .school-img-padding {
         margin-bottom: 10px !important
@@ -502,11 +472,11 @@ footer {
     #birthday-text {
         font-size: 15px;
     }
+    .content-text {
+        font-size: 15px;
+    }
 
-
-    #party,
-    #imgschool,
-    #opentimesimg,
+    .imgschool,
     #imgreindeer,
     #imggoatface {
         max-width: 100%;
@@ -520,6 +490,14 @@ footer {
         height: auto;
         margin-bottom: 20px;
     }
+    #party    {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        margin-right:0;
+        float:none ;
+    }
+    
     .form-container .btn {
         width: 100%;
     }
@@ -552,7 +530,6 @@ footer {
     }
 }
 
-
 @media (min-width: 992px) {
     .navbar-expand-lg {
         display: none;
@@ -566,23 +543,11 @@ footer {
     #imggoatface {
         margin-top: 70px;
     }
-    #opentimesimg {
-        margin-top: 0px;
-    }
 }
 
-    @media only screen and (max-width: 1300px) and (min-width: 993px) {
-        #opentimesimg {
-            max-width: 350px;
-        }
-        #imgreindeer {
-            float: inherit;
-        }
+@media (max-width: 400px) {
+    .main-title {
+        padding-top: 5px;
+        font-size: 20px
     }
-
-    @media (max-width: 400px) {
-        .main-title {
-            padding-top: 5px;
-            font-size: 20px
-        }
-    }
+}
