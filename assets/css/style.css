@@ -62,7 +62,14 @@ a:-webkit-any-link {
 .main-title {
     text-shadow: 2px 2px 3px grey;
     font-family: 'Gorditas', cursive;
+    text-decoration: none;
+    cursor: pointer;
+    color:#000000!important;
 }
+.h1 .a {
+    color:#000000!important;
+}
+
 
 .harlowessex {
     text-shadow: 1px 1px 3px grey;
@@ -477,7 +484,6 @@ footer {
     }
 
     .imgschool,
-    #imgreindeer,
     #imggoatface {
         max-width: 100%;
         height: auto;
@@ -496,6 +502,13 @@ footer {
         margin-bottom: 20px;
         margin-right:0;
         float:none ;
+    }
+    
+    #imgreindeer{
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        padding: 0;
     }
     
     .form-container .btn {

@@ -3,10 +3,8 @@ Stream One Project: User-Centric Frontend Development - Code Institute
 
 This is my child friendly website advertising and providing information for Pets Corner, a farm in Harlow, Essex. The site covers general information about the farm, the prices regarding venue hire and information on how to become a volunteer, including a contact form. 
 
-
 ## Demo
 Github link [here](https://chazza144.github.io/petscorner/)
-
 
 ## UX
 My goal in the design was to be child friendly and easily legible. I wanted to include lots of pictures to showcase the animals at the farm and the surrounding park. 
@@ -20,7 +18,6 @@ Also in my research, farm websites have high res, large photos to grab the user�
 
 The farm runs mainly from donations and volunteers so I wanted to ensure that there was clear advice and information for anyone who wants to volunteer/help out themselves. 
 Also, children’s parties and corporate events are another good way of raising money for the animals care so, although not included in my original wireframes, I added a page dedicated to venue hire. 
-
 
 ## Technologies
 1. HTML
@@ -36,12 +33,10 @@ Also, children’s parties and corporate events are another good way of raising 
 4.	Font awesome Icons within the Menu buttons, with ease-in-out transition. 
 5.	Contact form with added hover effect and focus colour change. 
 
-
 ### Features Left to Implement
 I would like to add a ‘Fun’ page for children which would include some games to play. And perhaps more information of the breeds and names of the animals on the farm. 
 Change the Contact Form to a pop up form accessible on all pages. 
 I'd like to make the PETS CORNER title text into a link which takes you back to the home page
-
 
 ## Testing
 Syntax – HTML & CSS
@@ -52,9 +47,7 @@ c.	venuehire.html
 d.	farmfriends.html
 e.	aboutus.html
 
-2.	Using https://jigsaw.w3.org/css-validator/ I checked
-a.	style.css
-
+Using https://jigsaw.w3.org/css-validator/ I checked the style.css code.
 
 If you try to submit the contact form with an invalid email address, there will be an error noting the invalid email address. Furthermore, the 'required' attribute is added to the 'name,' 'email,' and 'message' fields, so if those fields are not filled in, the form will not submit. 
 
@@ -64,12 +57,9 @@ This site was tested across multiple browsers (Chrome, Safari, Internet Explorer
 
 While testing the ‘Whats on’ page on iPhone 5 device, I noticed the event images were not centered so I reduced the size of the image on the media query which fixed the problem. 
 
-
 ## Deployment
-This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named `index.html`.
-
-To run locally, you can clone this repository directly into the editor of your choice by pasting `git clone https://github.com/chazza144/petscorner.git' into your terminal. To cut ties with this GitHub repository, type `git remote rm origin` into the terminal.
-
+This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. 
+To run locally, you can clone this repository directly into the editor of your choice by pasting `git clone https://github.com/chazza144/petscorner.git' into your terminal. 
 
 ## Credits
 
@@ -77,7 +67,6 @@ To run locally, you can clone this repository directly into the editor of your c
 All written content on Farm Friends, About Us and Venue Hire pages was found on the Harlow Council website [here](https://www.harlow.gov.uk/pets-corner)
 
 Flyers and Event information was found on Pets corner’s Facebook page (https://www.facebook.com/PetsCornerHarlow/)
-
 
 ### Media
 All image slider images were taken by myself using my mobile. I also photographed the reindeer calve and the park image on the Farm Friends page.
